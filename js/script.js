@@ -83,3 +83,21 @@ function displayResult() {
 
 // This code runs the displayResult function when the Show Results button is clicked.
 document.getElementById("show-result").addEventListener("click", displayResult);
+
+// This code resets the quiz so the user can take it again.
+document.getElementById("reset-quiz").addEventListener("click", function() {
+
+    // This code removes all selected answers.
+    selectedAnswers.length = 0;
+
+    // This code removes the selected style from every answer button.
+    document.querySelectorAll(".answer-btn").forEach(function(button) {
+        button.classList.remove("selected");
+    });
+
+    // This code clears the displayed result.
+    document.getElementById("result-text").textContent = "";
+
+    // This code hides the result card.
+    document.getElementById("result-container").style.display = "none";
+});
