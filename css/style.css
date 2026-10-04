@@ -1,6 +1,86 @@
-.selected {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
+ /* This code gives the page a dark gamer-style background. */
+body {
+    background-color: #121212;
+    color: #f2f2f2;
 }
-  
+
+/* This code styles the quiz title. */
+h1 {
+    color: #22c55e;
+}
+
+/* This code styles each quiz question card. */
+.question-block {
+    background-color: #1e1e1e;
+    border: 1px solid #3d3d3d;
+}
+
+/* This code styles the question text. */
+.question-block h4 {
+    color: #ffffff;
+}
+
+/* This code styles the answer buttons. */
+.answer-btn {
+    min-height: 60px;
+    color: #22c55e;
+    border-color: #22c55e;
+    background-color: #181818;
+}
+
+/* This code changes the answer button when the mouse is over it. */
+.answer-btn:hover {
+    background-color: #2b2b2b;
+    color: #4ade80;
+    border-color: #22c55e;
+}
+
+/* This code highlights the selected quiz answer. */
+.selected {
+    background-color: #22c55e !important;
+    color: #121212 !important;
+    border-color: #22c55e !important;
+}
+
+/* This code styles the Show Results button. */
+#show-result {
+    background-color: #22c55e;
+    border-color: #22c55e;
+    color: #121212;
+}
+
+/* This code changes the Show Results button when the mouse is over it. */
+#show-result:hover {
+    background-color: #16a34a;
+    border-color: #16a34a;
+}
+
+/* This code styles the Reset Quiz button. */
+#reset-quiz {
+    background-color: #444444;
+    border-color: #444444;
+}
+
+/* This code changes the Reset Quiz button when the mouse is over it. */
+#reset-quiz:hover {
+    background-color: #555555;
+    border-color: #555555;
+}
+
+/* This code styles the result card. */
+#result-container {
+    background-color: #1e1e1e;
+    border: 1px solid #22c55e;
+}
+
+/* This code styles the result heading. */
+#result-container h3 {
+    color: #22c55e;
+}
+
+/* This code makes the result text easier to read. */
+#result-text {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
